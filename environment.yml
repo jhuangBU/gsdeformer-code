@@ -1,0 +1,43 @@
+name: cagegaussian
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # python
+  - python=3.10
+  - pip=22.3.1
+  - setuptools<66
+  # CUDA
+  - cudatoolkit=11.6
+  - cudatoolkit-dev=11.6
+  # host compiler for building CUDA extensions
+  - gcc_linux-64=10
+  - gxx_linux-64=10
+  # pytorch
+  - numpy<2.0
+  - pytorch=1.12.1
+  - mkl=2024.0 # fix pytorch mkl versioning bug https://github.com/pytorch/pytorch/issues/123097
+  - torchvision=0.13.1
+  # optional preprocessing
+  # - colmap=3.8
+  # - imagemagick=7.1.1_5
+  # extra
+  - plyfile
+  - tqdm
+  - just
+  - pip:
+    - dill==0.3.8
+    - imageio==2.34.0
+    - trimesh==4.2.4
+    - anyio==4.3.0
+    - loguru==0.7.2
+    - omegaconf==2.3.0
+    - open3d==0.18.0
+    - opencv-python-headless==4.9.0.80
+    - gdown==5.1.0
+    - kaggle
+    - taichi==1.7.2
+    - gs3d/submodules/depth-diff-gaussian-rasterization
+    - gs3d/submodules/diff-gaussian-rasterization
+    - gs3d/submodules/simple-knn

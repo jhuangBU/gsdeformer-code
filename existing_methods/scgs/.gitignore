@@ -1,0 +1,7 @@
+outputs/*
+.vscode/*
+__pycache__/*
+__pycache__/
+*.pyc
+outputs_*
+datasets

@@ -1,0 +1,22 @@
+name: vrgs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - cudatoolkit=11.7
+  - cudatoolkit-dev=11.7
+  - pytorch=1.12.1
+  - pip
+  - pip:
+    - numpy
+    - matplotlib
+    - seaborn
+    - open3d
+    - trimesh
+    - tetgen
+    - pymeshlab==2022.2
+    - pymeshfix
+    - plyfile
+    - tqdm
+    - argparse
