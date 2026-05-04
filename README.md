@@ -16,6 +16,8 @@ Prereqs: NVIDIA driver ≥ 510 (check `nvidia-smi`), `sudo` access for apt.
 
 Installs system deps, miniforge, `just`, and the conda env; pulls cages/cameras and a pre-trained 3DGS lego bundle from HuggingFace; Outputs land in `exp-qual-highlight-interpolate/` and `stacked.png`.
 
+See `metadata.txt` for reference hardware, target figure, and reproduction notes.
+
 ## Requirements
 
 ### Hardware

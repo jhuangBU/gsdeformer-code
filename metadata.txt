@@ -1,0 +1,6 @@
+Title: GSDeformer: Direct, Real-time and Extensible Cage-based Deformation for 3D Gaussian Splatting
+Authors: Jiajun Huang, Shuolin Xu, Hongchuan Yu, Tong-Yee Lee
+Target OS: Ubuntu 20.04.1 LTS or newer
+Reference Hardware: NVIDIA GeForce GTX 1080 (8 GB VRAM); any CUDA 11.6 compatible NVIDIA GPU with >= 6 GB VRAM is sufficient.
+Reproduction Script: bash reproduce_highlight_interpolate.sh
+Reproduces: Teaser figure (first figure) of the paper, without the text annotations overlaid in the published version.
