@@ -10,11 +10,15 @@ For cage building code dump, please check [gsdeformer-cage](https://github.com/j
 bash reproduce_highlight_interpolate.sh
 ```
 
-End-to-end script for a vanilla Ubuntu 20.04.1 LTS host with an NVIDIA GPU. 
+End-to-end script for a vanilla Ubuntu 20.04.1 LTS host with an NVIDIA GPU. Reproduces the teaser figure of the paper (without the text annotations overlaid in the published version).
+
+**No training is required.** The script downloads pre-trained 3DGS weights for the lego scene from HuggingFace and runs inference only.
 
 Prereqs: NVIDIA driver ≥ 510 (check `nvidia-smi`), `sudo` access for apt.
 
-Installs system deps, miniforge, `just`, and the conda env; pulls cages/cameras and a pre-trained 3DGS lego bundle from HuggingFace; Outputs land in `exp-qual-highlight-interpolate/` and `stacked.png`.
+Installs system deps, miniforge, `just`, and the conda env; pulls cages/cameras and a pre-trained 3DGS lego bundle from HuggingFace (~7 GB unzipped); Outputs land in `exp-qual-highlight-interpolate/` and `stacked.png` (2560×1024).
+
+Inference time on the reference hardware (1× NVIDIA GTX 1080, tested on a vast.ai instance): **~3m 38s** wall-clock for `just infer_gsdeformer_exp_highlight_interpolate` (the rendering step that produces `stacked.png`).
 
 See `metadata.txt` for reference hardware, target figure, and reproduction notes.
 
