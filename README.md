@@ -4,7 +4,7 @@ main deformation code for paper [GSDeformer: Direct, Real-time and Extensible Ca
 
 For cage building code dump, please check [gsdeformer-cage](https://github.com/jhuangBU/gsdeformer-cage)
 
-## end-to-end reproduction script for the highlight image
+## End-to-end reproduction script for the highlight image
 
 ```bash
 bash reproduce_highlight_interpolate.sh
