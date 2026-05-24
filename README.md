@@ -2,7 +2,7 @@
 
 main deformation code for paper [GSDeformer: Direct, Real-time and Extensible Cage-based Deformation for 3D Gaussian Splatting](https://arxiv.org/abs/2405.15491)
 
-For cage building code dump, please check [gsdeformer-cage](https://github.com/jhuangBU/gsdeformer-cage)
+For cage building code dump, please check [gsdeformer-cage](https://github.com/jhuangBU/gsdeformer-code-cage)
 
 ## End-to-end reproduction script for the highlight image
 
